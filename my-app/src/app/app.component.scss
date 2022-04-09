@@ -1,0 +1,37 @@
+#sidenav {
+  height: 100vh;
+  max-height: 100vh;
+}
+
+#sidenav > hr {
+  margin: 0 0 0.3rem 0;
+}
+
+#page-content-wrapper {
+  min-width: 0;
+  width: 100%;
+}
+
+#page-content-wrapper .navbar-brand {
+  display: none;
+}
+
+@media (max-width: 991px) { 
+  #sidenav {
+    display: none!important;
+  }
+
+  #page-content-wrapper .navbar-brand {
+    display: block;
+  }
+}
+
+.bi {
+  vertical-align: -.125em;
+  pointer-events: none;
+  fill: currentColor;
+}
+
+a {
+  cursor: pointer; 
+}
