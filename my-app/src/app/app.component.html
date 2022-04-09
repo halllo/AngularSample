@@ -10,6 +10,8 @@
 
 <main>
   <div class="d-flex" id="wrapper">
+    
+    <!-- Side navigation-->
     <div id="sidenav" class="d-flex flex-column flex-shrink-0 text-white bg-dark sticky-top" style="width: 250px;">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
@@ -35,7 +37,7 @@
         <hr>
         <a ngbDropdownToggle class="d-flex align-items-center text-white text-decoration-none" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
           <img src="assets/Portrait_Placeholder.png" alt="" width="32" height="32" class="rounded-circle me-2">
-          <strong>mdo</strong>
+          <strong>Account</strong>
         </a>
         <ul ngbDropdownMenu class="u dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
           <li><a class="dropdown-item" href="#">New project...</a></li>
@@ -49,6 +51,8 @@
 
     <!-- Page content wrapper-->
     <div id="page-content-wrapper">
+
+      <!-- Top navigation-->
       <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">My App</a>
@@ -56,7 +60,6 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div [ngClass]="{'collapse': collapsed, 'navbar-collapse': true}" id="navbarSupportedContent">
-            <!-- class="collapse navbar-collapse" -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -95,4 +98,3 @@
     </div>
   </div>
 </main>
-  
